@@ -32,6 +32,7 @@ import org.uberfire.ext.layout.editor.client.row.RowView;
 
 public abstract class AbstractLayoutGenerator implements LayoutGenerator {
 
+    @Override
     public Panel build(LayoutTemplate layoutTemplate) {
         ComplexPanel container = getLayoutContainer();
         List<LayoutRow> rows = layoutTemplate.getRows();
